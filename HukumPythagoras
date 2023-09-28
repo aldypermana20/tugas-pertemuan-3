@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class HukumPythagoras {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Program Hukum Pythagoras");
+        System.out.print("Masukkan panjang sisi tegak (a): ");
+        double sisiTegak = input.nextDouble();
+
+        System.out.print("Masukkan panjang sisi mendatar (b): ");
+        double sisiMendatar = input.nextDouble();
+
+        double hipotenusa = hitungHipotenusa(sisiTegak, sisiMendatar);
+
+        System.out.println("Panjang sisi miring (hipotenusa) adalah: " + hipotenusa);
+
+        input.close();
+    }
+
+    public static double hitungHipotenusa(double a, double b) {
+        return Math.sqrt(a * a + b * b);
+    }
+}
