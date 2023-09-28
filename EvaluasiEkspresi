@@ -1,0 +1,33 @@
+public class EvaluasiEkspresi {
+    public static void main(String[] args) {
+        // Diberikan nilai variabel
+        int A = 3;
+        int B = 6;
+        int C = 2;
+        int K = 5;
+        int L = 4;
+        int M = 3;
+
+        // Evaluasi ekspresi a
+        boolean hasil_a = (4 + 2 > A) && (B - 2 > 3 + 2) || (B + 2 <= 6 + 2);
+
+        // Evaluasi ekspresi b
+        boolean hasil_b = (K + 5 < M) || ((C * M < L) && (2 * M - L > 0));
+
+        // Evaluasi ekspresi c
+        boolean hasil_c = (L + 5 < M) || ((C * K < L) && (2 * K - L > 0));
+
+        // Evaluasi ekspresi d
+        boolean hasil_d = (A * 4 <= 3 * M + B);
+
+        // Evaluasi ekspresi e
+        boolean hasil_e = (K + 10 > A) && (L - 2 > 4 * C);
+
+        // Cetak hasil
+        System.out.println("a: " + hasil_a);
+        System.out.println("b: " + hasil_b);
+        System.out.println("c: " + hasil_c);
+        System.out.println("d: " + hasil_d);
+        System.out.println("e: " + hasil_e);
+    }
+}
